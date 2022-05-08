@@ -6,7 +6,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import Selector from "./Selector";
+import Selector from "./componentes/Selector";
 
 const HOST_API = "http://localhost:8080/api";
 
@@ -127,7 +127,7 @@ const List = () => {
               <tr key={todo.id}>
                 <td>{todo.id}</td>
                 <td>{todo.name}</td>
-                <td>{todo.isCompleted === true ? "Sí" : "No"}</td>
+                <td>{<Selector />}</td>
                 <td>
                   <button onClick={() => onDelete(todo.id)}>Eliminar</button>
                 </td>
