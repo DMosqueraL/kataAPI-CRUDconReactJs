@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 const completo = ["Sí", "No"];
 
 function Selector() {
-  const [estado, setEstado] = useState(-1);
+  // const [estado, setEstado] = useState(-1);
 
   return (
     <div className="row">
@@ -11,7 +11,7 @@ function Selector() {
         <select name="completed">
           <option value={-1}>...</option>
           {completo.map((i) => (
-            <option key={"estado"} value={i}>
+            <option key="estado" value={i}>
               {i}
             </option>
           ))}
