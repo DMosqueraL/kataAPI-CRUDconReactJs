@@ -28,7 +28,7 @@ export const List = () => {
 
   return (
     <div>
-      <table className="table table-dark">
+      <table >
         <thead>
           <tr>
             <td>ID</td>
@@ -44,10 +44,10 @@ export const List = () => {
                 <td>{todo.name}</td>
                 <td>{<Selector />}</td>
                 <td>
-                  <button onClick={() => onDelete(todo.id)}>Eliminar</button>
+                  <button className="custom-btn btn-14" onClick={() => onDelete(todo.id)}>Eliminar</button>
                 </td>
                 <td>
-                  <button onClick={() => onEdit(todo)}>Editar</button>
+                  <button className="custom-btn btn-8" onClick={() => onEdit(todo)}>Editar</button>
                 </td>
               </tr>
             );

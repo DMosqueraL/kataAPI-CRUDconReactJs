@@ -58,7 +58,7 @@ export const Form = () => {
   };
 
   return (
-    <form className="form-group row" ref={formRef}>
+    <form ref={formRef}>
       <input
         type="text"
         name="name"
@@ -68,8 +68,8 @@ export const Form = () => {
           setState({ ...state, name: event.target.value });
         }}
       ></input>
-      {item.id && <button onClick={onEdit}>Actualizar</button>}
-      {!item.id && <button onClick={onAdd}>Agregar</button>}
+      {item.id && <button className="custom-btn btn-5" onClick={onEdit}>Actualizar</button>}
+      {!item.id && <button className="custom-btn btn-1" onClick={onAdd}>Agregar</button>}
     </form>
   );
 };
